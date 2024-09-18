@@ -12,6 +12,7 @@ test_images = test_images / 255.0
 train_images = train_images.reshape(train_images.shape[0], 28, 28, 1)
 test_images = test_images.reshape(test_images.shape[0], 28, 28, 1)
 
+print(test_images[0][1])
 
 model = keras.Sequential([
     keras.layers.Conv2D(input_shape=(28, 28, 1), filters=8, kernel_size=3, 
